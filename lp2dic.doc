@@ -1,0 +1,62 @@
+''' Escreva uma função em python que peça para o
+ usuario digitar um texto,
+conta a quantidade de vogais earmazena tal 
+quantidade em um dicionario, onde a chave é a
+vogal considerada'''
+'''
+vog = input ("Texto")
+
+vogal = {
+    'a': 0,
+    'e': 0,
+    'i': 0,
+    'o': 0,
+    'u': 0
+}
+
+vog = vog.split(' ')
+print (vog)'''
+'''
+def conta_vogal():
+    frase = input("Digite a frase: ")
+
+dic = {
+    'a':frase.count('a'),
+    'e':frase.count('e'),
+    'i':frase.count('i'),
+    'o':frase.count('o'),
+    'u':frase.count('u'),
+}
+return dic
+
+'''
+def conta_vogal():
+    frase = input("Digite a frase: ")
+    vogais ='aeiou'
+    dic = {}
+    for vogal in vogais:
+        dic[vogal]=frase.count(vogal)
+    return dic
+    
+print(conta_vogal())
+
+------------
+
+#2 linha
+
+def conta_vogal():
+    frase = input("Digite a frase: ")
+    dic = {vogal:frase.count(voga) for vogal in 'aeiou}
+    return dic
+    
+print(conta_vogal())
+
+---------------
+#1 linha
+def conta_vogal():
+    frase = input("Digite a frase: ")
+
+    return {vogal:frase.count(voga) for vogal in 'aeiou}
+    
+    
+print(conta_vogal()
